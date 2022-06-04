@@ -93,14 +93,14 @@ function ActionBar({
         } else if (response.code === 4) {
           setTxHash(null);
           setErrorMessage(
-            'Cyberlinking and investmint is not working. Wait updates.'
+            'Cyberlinking and investmint is not working. Wait for updates.'
           );
           setStage(STAGE_ERROR);
         } else {
           setTxHash(null);
           setErrorMessage(response.rawLog.toString());
           setStage(STAGE_ERROR);
-        }
+     
       } else {
         setErrorMessage(
           <span>
